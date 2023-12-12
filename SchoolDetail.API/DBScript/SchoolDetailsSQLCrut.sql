@@ -3,7 +3,7 @@
 Id bigint not null primary key identity(1,1),
     [SchoolName] [nvarchar] (50) NOT NULL,
     [Address] [nvarchar] (200) NOT NULL,
-	[StortedDate] [datetime2](7) NOT NULL,
+	[StartedDate] [datetime2](7) NOT NULL,
 	PhoneNumber bigint not null ,
 	Email_id nvarchar(50) not null
 )
@@ -12,18 +12,18 @@ drop procedure SchoolDetailsInsert
 select * from SchoolDetails
 create procedure SchoolDetailsInsert
 
-(@SchoolName nvarchar (50),@Address nvarchar (200),@StortedDate datetime2(7) ,@PhoneNumber bigint ,@Email_id nvarchar(50))
+(@SchoolName nvarchar (50),@Address nvarchar (200),@StartedDate datetime2(7) ,@PhoneNumber bigint ,@Email_id nvarchar(50))
 as
 begin
-insert into SchoolDetails values (@SchoolName,@Address,@StortedDate,@PhoneNumber,@Email_id)
+insert into SchoolDetails values (@SchoolName,@Address,@StartedDate,@PhoneNumber,@Email_id)
 end
 
 create procedure SchoolDetailsUpdate
 
-(@Id bigint,@SchoolName nvarchar (50),@Address nvarchar (200),@StortedDate datetime2(7) ,@PhoneNumber bigint ,@Email_id nvarchar(50))
+(@Id bigint,@SchoolName nvarchar (50),@Address nvarchar (200),@StartedDate datetime2(7) ,@PhoneNumber bigint ,@Email_id nvarchar(50))
 as
 begin
-update SchoolDetails set SchoolName=@SchoolName,Address=@Address,StortedDate=@StortedDate,PhoneNumber=@PhoneNumber,Email_id=@Email_id where Id=@Id
+update SchoolDetails set SchoolName=@SchoolName,Address=@Address,StartedDate=@StartedDate,PhoneNumber=@PhoneNumber,Email_id=@Email_id where Id=@Id
 end
 
 create procedure SchoolDetailstDelete

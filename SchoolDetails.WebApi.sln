@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.34114.132
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolDetails.WebApi", "SchoolDetails.Api\SchoolDetails.WebApi.csproj", "{367C87A7-2215-41B5-B3CC-F459A29DA6EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperDataAccessLayer", "DapperDataAccessLayer\DapperDataAccessLayer.csproj", "{1592FAFF-279D-4DBB-87E5-6C96DC34A8BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDataAccessLayer", "DapperDataAccessLayer\DapperDataAccessLayer.csproj", "{1592FAFF-279D-4DBB-87E5-6C96DC34A8BD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolDetails.API", "SchoolDetail.API\SchoolDetails.API.csproj", "{A3584708-DE4C-479B-9934-2B172ACCCC71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolDetails.API", "SchoolDetail.API\SchoolDetails.API.csproj", "{A3584708-DE4C-479B-9934-2B172ACCCC71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{367C87A7-2215-41B5-B3CC-F459A29DA6EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{367C87A7-2215-41B5-B3CC-F459A29DA6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{367C87A7-2215-41B5-B3CC-F459A29DA6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{367C87A7-2215-41B5-B3CC-F459A29DA6EA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1592FAFF-279D-4DBB-87E5-6C96DC34A8BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1592FAFF-279D-4DBB-87E5-6C96DC34A8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1592FAFF-279D-4DBB-87E5-6C96DC34A8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU

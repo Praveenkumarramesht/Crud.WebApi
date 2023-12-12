@@ -19,7 +19,7 @@ namespace DapperDataAccessLayer
 
                 var con = new SqlConnection(connectionString);
                 con.Open();
-                var insertQuery = $"exec SchoolDetailsInsert '{SchoolDetail.SchoolName}', '{SchoolDetail.Address}', '{SchoolDetail.StortedDate}', {SchoolDetail.PhoneNumber}, '{SchoolDetail.Email_id}'";
+                var insertQuery = $"exec SchoolDetailsInsert '{SchoolDetail.SchoolName}', '{SchoolDetail.Address}', '{SchoolDetail.StartedDate}', {SchoolDetail.PhoneNumber}, '{SchoolDetail.Email_id}'";
                 con.Execute(insertQuery);
                 con.Close();
 
@@ -59,6 +59,11 @@ namespace DapperDataAccessLayer
                 throw;
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         public SchoolDetailss FindSchoolDetailsByIdSP(long Id)
         {
             try
@@ -116,7 +121,7 @@ namespace DapperDataAccessLayer
 
                 var con = new SqlConnection(connectionString);
                 con.Open();
-                var updateQuery = $"exec SchoolDetailsUpdate {Id},'{Sch.SchoolName}', '{Sch.Address}', '{Sch.StortedDate.ToString("MM/dd/yyyy")}', {Sch.PhoneNumber},'{Sch.Email_id}'";
+                var updateQuery = $"exec SchoolDetailsUpdate {Id},'{Sch.SchoolName}', '{Sch.Address}', '{Sch.StartedDate.ToString("MM/dd/yyyy")}', {Sch.PhoneNumber},'{Sch.Email_id}'";
                 var shl = con.QueryFirstOrDefault<SchoolDetailss>(updateQuery);
                 con.Execute(updateQuery);
                 con.Close();

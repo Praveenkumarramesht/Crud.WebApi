@@ -13,7 +13,7 @@ namespace SchoolDetails.API.Controllers
     [ApiController]
     public class SchoolDetailsAPIController : ControllerBase
     {
-        ISchoolDetailsRepository obj;
+        private readonly ISchoolDetailsRepository obj;
         public SchoolDetailsAPIController()
         {
             obj = new SchoolDetailsRepository();
